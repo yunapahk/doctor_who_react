@@ -3,12 +3,9 @@
 ![10th Doctors Box](police_box.jpeg)
 
 ## Objectives
-
-Learn about Thinking in React, use the activity to apply what you've learned.
-
 Doctor Who's Police Box is a T.A.R.D.I.S (Time and Relative Dimension In Space), a fantastical space ship that can fly through time and space and other mind-bending-ly impossible situations. It can go _anywhere_.
 
-Today, you're going to help the T.A.R.D.I.S. navigate through a React App in the form of an object
+Help T.A.R.D.I.S. navigate through a React App in the form of an object
 
 ```js
 const tardis = {
@@ -18,9 +15,9 @@ const tardis = {
 ```
 
 ## Thinking in React
-- By now, it should be pretty obvious that React is a pretty different approach than using server side templating like we did in the previous unit.
+- By now, it should be pretty obvious that React is a pretty different approach than using server side templating.
 
-- Take a few minutes to read over
+- Read over
 [Thinking in React](https://triplebyte.com/blog/how-to-think-in-react)
 
 ## Set Up
@@ -28,17 +25,9 @@ const tardis = {
 Use Create React App:
 - `npx create-react-app tardis` or use a React Template at CodeSandBox.io
 - `cd tardis`
-- if you are doing this in your class/unit repo make sure to remove the git repo create-react-app will make in the project folder
-
-from inside the /tardis folder
-
-```
-rm -rf .git
-```
-
 - `npm start` to run development server (will be running automatically in codesandbox)
 
-To aid in visualization here is some css.
+Add some css.
 
 Every div will have a blue border and have some space around it for easy distinction between divs.
 

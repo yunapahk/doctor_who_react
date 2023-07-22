@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import DivOne from "./components/DivOne";
+import DivTwo from "./components/DivTwo";
 
 function App() {
+  const [tardis, setTardis] = React.useState({
+    name: "Time and Relative Dimension in Space",
+    caps: false,
+  });
+
+  const updateCapitalization = () => {
+    setTardis((prevState) => ({
+      ...prevState,
+      name: prevState.caps ? prevState.name.toLowerCase() : prevState.name.toUpperCase(),
+      caps: !prevState.caps,
+    }));
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h3 onClick={updateCapitalization}>{tardis.name}</h3>
+      <DivOne name={tardis.name} onClick={updateCapitalization} />
+      <DivTwo name={tardis.name} onClick={updateCapitalization} />
     </div>
   );
 }
